@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
-      <v-btn @click="play()">再生</v-btn>
+      <audio :src="require('@/assets/sound/se/tap.mp3')" controls />
       <div class="text-center">
         <logo />
         <vuetify-logo />
@@ -81,18 +81,10 @@
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
 
-import clickSound from '~/assets/sound/se/tap.mp3'
-const audio = new Audio(clickSound)
-
 export default {
   components: {
     Logo,
     VuetifyLogo
-  },
-  methods: {
-    play () {
-      audio.play()
-    }
   }
 }
 </script>
