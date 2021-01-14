@@ -81,7 +81,7 @@
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
 
-import clickSound from '~/assets/sound/se/bomb.mp3'
+import clickSound from '~/assets/sound/se/tap.mp3'
 const audio = new Audio(clickSound)
 
 export default {
