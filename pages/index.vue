@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
-      <audio :src="require('@/assets/sound/se/tap.mp3')" controls />
+      <audio src="https://raw.githubusercontent.com/EdV4H/PorcepicHub/main/assets/sound/bgm/tequila.mp3" controls />
       <div class="text-center">
         <logo />
         <vuetify-logo />
