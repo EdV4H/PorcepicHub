@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-porcepichub-dev-45115-authRole",
+      "UnauthRoleArn": "arn:aws:iam::844096456908:role/amplify-porcepichub-dev-45115-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::844096456908:role/amplify-porcepichub-dev-45115-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-porcepichub-dev-45115-deployment",
+      "UnauthRoleName": "amplify-porcepichub-dev-45115-unauthRole",
+      "StackName": "amplify-porcepichub-dev-45115",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:844096456908:stack/amplify-porcepichub-dev-45115/ddd41800-56a1-11eb-bafa-0aece754dcdc",
+      "AmplifyAppId": "dp2akvs4j4ae8"
+    }
+  }
+}
