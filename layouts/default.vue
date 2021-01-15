@@ -9,7 +9,6 @@
     </v-app-bar>
     <v-bottom-navigation
       v-model="value"
-      :background-color="color"
       app
       grow
       shift
@@ -43,7 +42,7 @@
             :src="require('~/assets/image/linkqr.png')"
             aspect-ratio="1.5"
             contain
-          ></v-img>
+          />
         </v-card-text>
       </v-card>
     </v-dialog>
@@ -58,17 +57,6 @@ export default {
       value: 0,
       dialog: {
         share: false
-      }
-    }
-  },
-  computed: {
-    color () {
-      switch (this.value) {
-        case 0: return 'blue-grey'
-        case 1: return 'teal'
-        case 2: return 'brown'
-        case 3: return 'indigo'
-        default: return 'blue-grey'
       }
     }
   }

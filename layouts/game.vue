@@ -2,7 +2,6 @@
   <v-app dark>
     <v-bottom-navigation
       v-model="value"
-      :background-color="color"
       app
       grow
       shift
@@ -50,17 +49,6 @@ export default {
       value: 0,
       dialog: {
         share: false
-      }
-    }
-  },
-  computed: {
-    color () {
-      switch (this.value) {
-        case 0: return 'blue-grey'
-        case 1: return 'teal'
-        case 2: return 'brown'
-        case 3: return 'indigo'
-        default: return 'blue-grey'
       }
     }
   }
