@@ -4,7 +4,6 @@
       v-model="value"
       app
       grow
-      shift
     >
       <v-btn to="/">
         <span>Home</span>
