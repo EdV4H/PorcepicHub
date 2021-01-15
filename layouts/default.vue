@@ -102,6 +102,11 @@ export default {
           to: '/'
         },
         {
+          icon: 'mdi-gamepad',
+          title: 'Tequila',
+          to: '/tequila'
+        },
+        {
           icon: 'mdi-chart-bubble',
           title: 'Inspire',
           to: '/inspire'
@@ -110,7 +115,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'Porcepic Hub'
     }
   }
 }
