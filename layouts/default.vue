@@ -7,6 +7,11 @@
       <v-toolbar-title v-text="title" />
       <v-spacer />
     </v-app-bar>
+    <v-main>
+      <v-container>
+        <nuxt />
+      </v-container>
+    </v-main>
     <v-bottom-navigation
       v-model="value"
       app
@@ -22,11 +27,6 @@
         <v-icon>mdi-share-variant</v-icon>
       </v-btn>
     </v-bottom-navigation>
-    <v-main>
-      <v-container>
-        <nuxt />
-      </v-container>
-    </v-main>
     <v-dialog
       v-model="dialog.share"
       width="500"
@@ -61,3 +61,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+#app .v-bottom-navigation .v-btn {
+  height: inherit !important;
+}
+</style>

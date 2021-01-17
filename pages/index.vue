@@ -2,7 +2,7 @@
   <div>
     <v-row justify="center" align="center">
       <v-col cols="12" sm="8" md="6">
-        <v-card>
+        <v-card class="mb-3">
           <v-card-title class="headline">
             Welcome to the Porcepic Hub
           </v-card-title>
@@ -23,18 +23,18 @@
             </div>
           </v-card-text>
         </v-card>
-      </v-col>
-    </v-row>
-    <v-row align="center">
-      <v-col cols="6">
-        <v-card to="/tequila">
-          <v-img
-            :src="require('~/assets/image/tequila.png')"
-            alt="Tequila Legend"
-            class="ma-1"
-          />
-          <v-card-title>Tequila Legend</v-card-title>
-        </v-card>
+        <v-row align="center">
+          <v-col cols="6">
+            <v-card to="/tequila">
+              <v-img
+                :src="require('~/assets/image/tequila.png')"
+                alt="Tequila Legend"
+                class="ma-1"
+              />
+              <v-card-title>Tequila Legend</v-card-title>
+            </v-card>
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </div>

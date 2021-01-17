@@ -1,5 +1,10 @@
 <template>
   <v-app dark>
+    <v-main>
+      <v-container>
+        <nuxt />
+      </v-container>
+    </v-main>
     <v-bottom-navigation
       v-model="value"
       app
@@ -29,15 +34,10 @@
             :src="require('~/assets/image/linkqr.png')"
             aspect-ratio="1.5"
             contain
-          ></v-img>
+          />
         </v-card-text>
       </v-card>
     </v-dialog>
-    <v-main>
-      <v-container>
-        <nuxt />
-      </v-container>
-    </v-main>
   </v-app>
 </template>
 
