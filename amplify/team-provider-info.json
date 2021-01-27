@@ -10,6 +10,13 @@
       "StackName": "amplify-porcepichub-dev-45115",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:844096456908:stack/amplify-porcepichub-dev-45115/ddd41800-56a1-11eb-bafa-0aece754dcdc",
       "AmplifyAppId": "dp2akvs4j4ae8"
+    },
+    "categories": {
+      "auth": {
+        "porcepichub1df5eba8": {
+          "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\",\"client_id\":\"790338994174-bvoljt892268q08q9an8pr92nmh5ivsj.apps.googleusercontent.com\",\"client_secret\":\"beMAzU_13atL2vSQj7jkiBq-\"}]"
+        }
+      }
     }
   }
 }

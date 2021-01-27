@@ -85,6 +85,7 @@
 <script>
 export default {
   layout: 'game',
+  middleware: 'auth',
   data () {
     return {
       scenes: {

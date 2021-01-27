@@ -23,6 +23,7 @@
             </div>
           </v-card-text>
         </v-card>
+
         <v-row align="center">
           <v-col
             v-for="(game, i) in games"
@@ -38,11 +39,13 @@
         </v-row>
       </v-col>
     </v-row>
+    <amplify-sign-out />
   </div>
 </template>
 
 <script>
 export default {
+  middleware: 'auth',
   data () {
     return {
       games: [

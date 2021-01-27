@@ -1,1 +1,10 @@
-{}
+{
+  "auth": {
+    "porcepichub1df5eba8": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

@@ -129,6 +129,7 @@
 <script>
 export default {
   layout: 'game',
+  middleware: 'auth',
   data () {
     return {
       scenes: {
@@ -194,12 +195,14 @@ export default {
     initGame () {
       this.params.scene.value = this.scenes.game
       this.dialog.gameover = false
+      this.audio.gameover.pause()
+      this.audio.gameover.currentTime = 0
 
       this.params.map.value = Array.from({ length: this.params.edge.value * this.params.edge.value }, () => -1)
       this.params.map.value[Math.floor(Math.random() * this.params.map.value.length)] = 1
 
       this.audio.bgm.currentTime = 0
-      // this.audio.bgm.play()
+      this.audio.bgm.play()
     },
     tap (i) {
       this.audio.tap.currentTime = 0
