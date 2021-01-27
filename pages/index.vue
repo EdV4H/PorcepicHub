@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-row justify="center" align="center">
+    <v-row justify="center" align="center" class="mb-5">
       <v-col cols="12" sm="8" md="6">
         <v-card class="mb-3">
           <v-card-title class="headline">

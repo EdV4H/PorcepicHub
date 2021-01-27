@@ -24,19 +24,7 @@
       v-model="dialog.share"
       width="500"
     >
-      <v-card light>
-        <v-card-title class="white--text primary mb-3">
-          このアプリをシェアする
-        </v-card-title>
-        <v-card-text class="mt-2">
-          <p>QRコードを読み込んでアプリをシェアしよう！</p>
-          <v-img
-            :src="require('~/assets/image/linkqr.png')"
-            aspect-ratio="1.5"
-            contain
-          />
-        </v-card-text>
-      </v-card>
+      <base-share-card />
     </v-dialog>
   </v-app>
 </template>
