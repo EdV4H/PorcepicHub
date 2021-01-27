@@ -24,15 +24,16 @@
           </v-card-text>
         </v-card>
         <v-row align="center">
-          <v-col cols="6">
-            <v-card to="/tequila">
-              <v-img
-                :src="require('~/assets/image/tequila.png')"
-                alt="Tequila Legend"
-                class="ma-1"
-              />
-              <v-card-title>Tequila Legend</v-card-title>
-            </v-card>
+          <v-col
+            v-for="(game, i) in games"
+            :key="i"
+            cols="6"
+          >
+            <base-content-card
+              :title="game.title"
+              :src="game.src"
+              :to="game.to"
+            />
           </v-col>
         </v-row>
       </v-col>
@@ -42,5 +43,21 @@
 
 <script>
 export default {
+  data () {
+    return {
+      games: [
+        {
+          title: 'Tequila Legend',
+          src: require('~/assets/image/tequila.png'),
+          to: '/tequila'
+        },
+        {
+          title: 'Dangerous One',
+          src: require('~/assets/image/dangerous.png'),
+          to: '/dangerous'
+        }
+      ]
+    }
+  }
 }
 </script>

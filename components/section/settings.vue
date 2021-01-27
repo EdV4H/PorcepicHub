@@ -41,7 +41,7 @@ export default {
       default: 'No Title'
     },
     settings: {
-      type: Array,
+      type: Object,
       default: undefined
     }
   }
