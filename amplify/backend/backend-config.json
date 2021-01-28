@@ -1,6 +1,6 @@
 {
   "auth": {
-    "porcepichub1df5eba8": {
+    "porcepichubcad5a301": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],

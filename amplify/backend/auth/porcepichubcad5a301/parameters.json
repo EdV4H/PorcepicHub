@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "porcepichub1df5eba8_identitypool_1df5eba8",
+    "identityPoolName": "porcepichubcad5a301_identitypool_cad5a301",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "porcep1df5eba8",
-    "userPoolName": "porcepichub1df5eba8_userpool_1df5eba8",
+    "resourceNameTruncated": "porcepcad5a301",
+    "userPoolName": "porcepichubcad5a301_userpool_cad5a301",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -18,7 +18,7 @@
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [],
     "requiredAttributes": [
-        "email"
+        "name"
     ],
     "userpoolClientGenerateSecret": true,
     "userpoolClientRefreshTokenValidity": 30,
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "porcep1df5eba8_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "porcepcad5a301_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "1df5eba8",
-    "resourceName": "porcepichub1df5eba8",
+    "sharedId": "cad5a301",
+    "resourceName": "porcepichubcad5a301",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -47,13 +47,18 @@
     },
     "useDefault": "defaultSocial",
     "hostedUI": true,
-    "hostedUIDomainName": "porcepichub1df5eba8-1df5eba8",
+    "triggers": "{}",
+    "hostedUIDomainName": "porcepichubcad5a301-cad5a301",
     "authProvidersUserPool": [
         "Google"
     ],
-    "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
+    "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid profile\",\"AttributeMapping\":{\"name\":\"name\",\"username\":\"sub\"}}]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://www.porcepichub.com/\"],\"LogoutURLs\":[\"https://www.porcepichub.com/\"]}",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
-    "dependsOn": [],
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://www.porcepichub.com/\",\"https://www.porcepichub.com/\"],\"LogoutURLs\":[\"https://www.porcepichub.com/\",\"https://www.porcepichub.com/\"]}"
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "permissions": [],
+    "dependsOn": []
 }
