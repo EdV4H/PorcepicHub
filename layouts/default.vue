@@ -55,8 +55,8 @@ export default {
 }
 </script>
 
-<style scoped>
-#app .v-bottom-navigation .v-btn {
-  height: inherit !important;
+<style>
+.v-item-group.v-bottom-navigation .v-btn.v-size--default {
+    height: inherit;
 }
 </style>
