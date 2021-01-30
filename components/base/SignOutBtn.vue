@@ -1,8 +1,8 @@
 <template>
   <v-btn
-    @click="signOut()"
     v-bind="$attrs"
     v-on="$listeners"
+    @click="signOut()"
   >
     Sign Out
   </v-btn>
