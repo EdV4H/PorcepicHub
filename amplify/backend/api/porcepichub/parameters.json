@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "porcepichub",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authporcepichubcad5a301",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

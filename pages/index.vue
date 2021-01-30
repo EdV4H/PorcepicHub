@@ -2,7 +2,7 @@
   <div>
     <v-row justify="center" align="center" class="mb-5">
       <v-col cols="12" sm="8" md="6">
-        <v-card class="mb-3">
+        <v-card>
           <v-card-title class="headline">
             Welcome to the Porcepic Hub
           </v-card-title>
@@ -24,7 +24,7 @@
           </v-card-text>
         </v-card>
 
-        <v-row align="center">
+        <v-row align="center" class="my-3">
           <v-col
             v-for="(game, i) in games"
             :key="i"
@@ -37,9 +37,12 @@
             />
           </v-col>
         </v-row>
+
+        <base-sign-out-btn
+          block
+        />
       </v-col>
     </v-row>
-    <amplify-sign-out />
   </div>
 </template>
 

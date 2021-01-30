@@ -26,6 +26,20 @@
           block
           @click="signIn('Google')"
         />
+        <v-btn
+          large
+          block
+          color="green"
+          @click="signIn('LINE')"
+        >
+          <v-icon
+            left
+            large
+          >
+            mdi-alpha-l
+          </v-icon>
+          Sign in with LINE
+        </v-btn>
       </v-col>
     </v-row>
   </div>
@@ -37,7 +51,13 @@ import { Auth } from 'aws-amplify'
 export default {
   methods: {
     async signIn (provider) {
-      await Auth.federatedSignIn({ provider })
+      if (location.origin === 'http://localhost:3000') {
+        // debug
+        await Auth.signIn('admin', 'phubadmin')
+        this.$router.push('/')
+      } else {
+        await Auth.federatedSignIn({ provider })
+      }
     }
   }
 }
