@@ -37,10 +37,6 @@
             />
           </v-col>
         </v-row>
-
-        <base-sign-out-btn
-          block
-        />
       </v-col>
     </v-row>
   </div>
